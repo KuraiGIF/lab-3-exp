@@ -1,0 +1,61 @@
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+
+int main()
+{ 
+        int end = 0;
+        cout << "you need this program?(1-yes/2-no)" << endl;
+		    cin >> end;
+		while(end < 2){
+		   cout << "you need this program?(1-yes/2-no)" << endl;
+		   cin >> end;
+		   
+		   if(end == 1){
+		cout << "you ghoul?(1-yes/2-no)" << endl;
+		int G = 0;
+		cin >> G;
+		
+	if (G == 1) {
+	 int i = 1000, b = 0;
+		cout << "chose a number for -7" << "\n"; // число от котого будет производится -7
+		cin >> i; //ввод числа і
+		cout << "chose a min number" << "\n"; //число после которого код не будет считать -7
+		cin >> b; //ввод числа b
+
+        cout << "Kaneeeki" << " " << i << "-7?" << "\n"; //фраза
+
+		while (i > b) // если "б" меньше чем "и" то идёт по новой "и - 7"
+		{
+		cout << " " << i << "-7" << " = ";
+		i = i - 7; // уравнение
+		cout << i << "\n";
+        }
+        
+	} else {
+	    cout << "you... don't true ghoul" << endl;
+	    int i = 1000, b = 0;
+		cout << "chose a number for +7" << "\n"; // число от котого будет производится -7
+		cin >> i; //ввод числа і
+		cout << "chose a max number" << "\n"; //число после которого код не будет считать -7
+		cin >> b; //ввод числа b
+
+        cout << "Kaneeeki" << " " << i << "-7?" << "\n"; //фраза
+
+		while (i < b) // если "б" меньше чем "и" то идёт по новой "и - 7"
+		{
+		
+
+		cout << " " << i << "+7" << " = ";
+		i = i + 7; // уравнение
+		cout << i << "\n";
+        }
+	 }
+		   }
+		   else{
+		       return 0;
+		   }
+}
+	return 0;
+}
